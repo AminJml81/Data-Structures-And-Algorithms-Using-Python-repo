@@ -18,14 +18,11 @@ def convert_infix_to_postfix(expression):
                                 1-2-1) if the stack is empty push the operator to the stack.
                                 1-2-2) if the precedence of the scanned operator is higher than the
                                        stack peek operator : push the operator to the stack.
-                                1-2-3) if the precedence of the operator is equal to the stack peek and
-                                1-2-3-1) if the operator is ^: push the operator to the stack.
-                                         (since the ^ operator is right associative)
-                                1-2-3-2) else pop the operator(s)
-                                       until: the precedence of the stack peek is lower than the scanned
-                                              operator
+                                1-2-3) if the precedence of the operator is equal to the stack peek
+                                          pop the operator(s)
+                                          until: the precedence of the stack peek is lower than the scanned
+                                          operator
                                        then push the scanned operator to the stack.
-                                       (other operators are left associative )
                                 1-2-4) if the precedence of the operator is lower than the stack peek operator
                                        pop the stack and add it to the postfix expression
                                        until: the precedence of the stack peek is lower than the scanned operator
@@ -53,7 +50,6 @@ def convert_infix_to_postfix(expression):
         '-': 1,
         '*': 2,
         '/': 2,
-        '^': 3,
     }
     index, max_index = 0, len(expression)
     while index < max_index:
