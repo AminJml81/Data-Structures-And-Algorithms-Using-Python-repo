@@ -29,7 +29,6 @@ class Queue:
                            returns True if the queue is empty.
                 __len__():
                          returns queue's size.
-
     """
 
     def __init__(self):

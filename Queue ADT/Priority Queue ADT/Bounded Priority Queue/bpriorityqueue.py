@@ -29,7 +29,6 @@ class BPriorityQueue:
 
                 is_empty():
                            returns True if the queue is empty.
-
         """
 
     def __init__(self, num_levels):

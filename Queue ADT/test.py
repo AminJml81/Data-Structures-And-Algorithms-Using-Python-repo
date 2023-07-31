@@ -6,6 +6,7 @@ from arrayqueue import Queue
 queue = Queue(maxsize=5,queue_items_type=str)
 # queue = Queue()
 
+
 print(queue.is_empty())
 queue.enqueue(1)
 queue.enqueue(2)

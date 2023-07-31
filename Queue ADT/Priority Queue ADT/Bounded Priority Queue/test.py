@@ -14,6 +14,7 @@ for k in range(4):
 for l in range(5):
     queue.enqueue('*', 5)
 
+
 print(queue.dequeue())
 print(queue.dequeue())
 print(queue.dequeue())
