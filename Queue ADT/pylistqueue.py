@@ -21,6 +21,7 @@ class Queue:
 
                 __len()--:
                           returns queue's size.
+
     """
 
     def __init__(self):

@@ -27,7 +27,6 @@ class Queue:
 
                 is_empty():
                            returns True if the queue is empty.
-
     """
 
     def __init__(self):

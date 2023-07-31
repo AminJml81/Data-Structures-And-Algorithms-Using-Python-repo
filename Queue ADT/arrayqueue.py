@@ -40,6 +40,7 @@ class Queue:
 
     # by using numpy array, adding two markers for queue's front and back , enqueue() and dequeue() operations are done
     in O(1). but the queue size now is limited.
+
     """
 
     def __init__(self, maxsize, queue_items_type=int):

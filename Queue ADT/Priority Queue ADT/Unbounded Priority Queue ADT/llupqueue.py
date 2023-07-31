@@ -58,6 +58,7 @@ class PriorityQueue:
         returns None
 
         worst time complexity of O(1).
+
         """
         new_node = _QueueNode(item, priority)
         if self.is_empty():

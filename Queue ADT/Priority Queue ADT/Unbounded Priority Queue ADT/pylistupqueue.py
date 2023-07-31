@@ -102,6 +102,3 @@ class _PriorityQEntry:
     def __init__(self, item, priority):
         self.item = item
         self.priority = priority
-
-
-
