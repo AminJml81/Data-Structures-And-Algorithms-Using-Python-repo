@@ -27,8 +27,7 @@ class Queue:
 
                 is_empty():
                            returns True if the queue is empty.
-                __len__():
-                         returns queue's size.
+
     """
 
     def __init__(self):
@@ -78,12 +77,6 @@ class Queue:
         returns True if the queue is empty, False Otherwise.
         """
         return self._head is None
-
-    def __len__(self):
-        """
-        returns total number of items in the queue.
-        """
-        return self._count
 
 
 class _QueueNode:

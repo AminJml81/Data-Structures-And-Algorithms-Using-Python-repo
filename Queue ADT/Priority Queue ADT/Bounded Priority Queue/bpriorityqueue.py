@@ -85,4 +85,3 @@ class BPriorityQueue:
         returns total number of items in the queue.
         """
         return self._count
-

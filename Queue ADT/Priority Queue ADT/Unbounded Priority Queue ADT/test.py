@@ -16,6 +16,7 @@ pq.enqueue("yellow", 5)
 print(pq.is_empty())
 print(len(pq))
 
+
 print(pq.dequeue())
 print(pq.dequeue())
 print(pq.dequeue())
