@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class Queue:
+class CircularQueue:
     """
     Array Queue
     class to represent circular queue(FIFO) Data Structure using python numpy array.

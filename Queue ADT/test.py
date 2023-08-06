@@ -1,9 +1,9 @@
 # from pylistqueue import Queue
-from arrayqueue import Queue
-# from llistqueue import Queue
+from llistqueue import Queue
+from arrayqueue import CircularQueue
 
 # queue  = Queue()
-queue = Queue(maxsize=5,queue_items_type=str)
+queue = CircularQueue(maxsize=5, queue_items_type=str)
 # queue = Queue()
 
 
