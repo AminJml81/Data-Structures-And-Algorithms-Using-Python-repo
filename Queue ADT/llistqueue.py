@@ -27,6 +27,8 @@ class Queue:
 
                 is_empty():
                            returns True if the queue is empty.
+                __len__():
+                          override len() function for queue.
 
     """
 
@@ -70,6 +72,7 @@ class Queue:
         assert not self.is_empty(), 'Cannot Dequeue from an empty queue.'
         item = self._head.item
         self._head = self._head.next
+        self._count -= 1
         return item
 
     def is_empty(self):
@@ -77,6 +80,10 @@ class Queue:
         returns True if the queue is empty, False Otherwise.
         """
         return self._head is None
+
+    def __len__(self):
+        """len() function"""
+        return self._count
 
 
 class _QueueNode:
@@ -90,6 +97,7 @@ class _QueueNode:
                 next : Node
                         next's Node reference.
     """
+
     def __init__(self, item):
         self.item = item
         self.next = None
