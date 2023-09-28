@@ -1,0 +1,32 @@
+" simulating airline ticket counter to measure the average amount of time each passenger has to wait in a queue to get
+  service by a server."
+
+in this project the airline ticket counter simulation contains events that would include:
+customer arrival, the start or conclusion of a transaction, or customer departure.
+
+- The simulation is time driven and performed over a preset time period.
+- The passing of time is represented by a loop, which increments a discrete time variable once for each tick of the clock.
+- The events can only occur at discrete time intervals.
+Thus, the time units must be small enough such that no event can occur between units.
+A simulation is commonly designed to allow the user to supply parameters that define the conditions of the system.
+
+For a discrete event simulation modeling a queuing system, these parameters include:
+- The length of the simulation given in number of time units. The simulation typically begins at time unit zero.
+- The number of servers providing the service to the customers. We must have at least one server.
+- The expected service time to complete a transaction.
+- The distribution of arrival times, which is used to determine when customers arrive.
+
+By adjusting these parameters, the user can change the conditions under which the simulation is performed.
+We can change the number of servers, for example, to determine the optimal number required to provide satisfactory
+service under the given conditions.
+
+Finally, a set of rules are defined for handling the events during each tick of the clock. The specific rules depends on
+what results are being studied. To determine the average time customers must wait in line before being served, there are
+three rules:
+Rule 1: If a customer arrives, he is added to the queue. At most, one customer can arrive during each time step.
+Rule 2: If there are customers waiting, for each free server, the next customer in line begins her transaction.
+Rule 3: For each server handling a transaction, if the transaction is complete, the customer departs and the server
+becomes free.
+
+When the simulation completes, the average waiting time can be computed by dividing the total waiting time for all
+customers by the total number of customers.
